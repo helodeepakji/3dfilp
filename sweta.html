@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: #f5eeee;
+            font-family: sans-serif;
+
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .container .card {
+
+            position: relative;
+            margin: 20px 0;
+            width: 300px;
+            height: 400px;
+            background: #fff;
+            transform-style: preserve-3d;
+            transform: perspective(2000px);
+            transition: 1s;
+            box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+        }
+
+        .container .card:hover {
+
+            transform: perspective(2000px) rotate(-10deg);
+            box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+        }
+
+        .container .card .imgbox {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            transform-origin: left;
+            z-index: 1;
+            transition: 1s;
+        }
+
+        .card:hover .imgbox {
+            transform: rotateY(-135deg);
+
+        }
+
+        .card .imgbox img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card .detal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .container .card {
+                width: 250px;
+                height: 350px;
+            }
+
+            .container .card:hover {
+                margin-left: 20px;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+
+            .container .card:hover {
+                margin-left: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imgbox">
+                <img src="image01.png" alt="">
+            </div>
+            <div class="detal">
+                <h2>खुदा से जिक्र</h2>
+                <p>अगर अपनी किस्मत लिखने का
+                    जरा सा भी हक हो मुझे,
+                    तो अपने नाम के साथ तुझे हर बार लिखूं..!!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="image02.png" alt="">
+            </div>
+            <div class="detal">
+                <h2>अर्जियां </h2>
+                <p>पाना और खोना तो किस्मत की बात है,
+                    मगर चाहते रहना तो अपने हाथ में है।</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="image03.png" alt="">
+            </div>
+            <div class="detal">
+                <h2>रोज यही दुआ करते हैं</h2>
+                <p>तेरी खैरियत का ही जिक्र रहता है दुआओं में,
+                    मसला सिर्फ मोहब्बत का ही नही फिक्र का भी है.!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="image04.png" alt="">
+            </div>
+            <div class="detal">
+                <h2>मुस्कान </h2>
+                <p>मुस्कुरा जाता हूँ अक्सर गुस्से में भी तेरा नाम सुन कर !🤭
+                    तेरे नाम से इतनी मोहब्बत❤️ है,तो सोच तुझसे कितनी होगी !❤️</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="image05.png" alt="">
+            </div>
+            <div class="detal">
+                <h2>प्यार </h2>
+                <p>मेरे प्यार की #हद न पूछो तुम
+                    हम जीना🥀 छोड़ सकते है
+                    पर तुम्हे प्यार करना नहीं❤️</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="image06.png" alt="">
+            </div>
+            <div class="detal">
+                <h2>जिन्दगी जीने के तरीके </h2>
+                <p>तुझे मोहब्बत करना नही आता,
+                    मुझे मोहब्बत के सिवा कुछ नहीं आता,
+                    जिंदगी गुजारने के दो तरीके होते हैं
+                    एक तुझे नही आता और एक मुझे नही आता।</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

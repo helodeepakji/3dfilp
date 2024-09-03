@@ -139,7 +139,7 @@
         </div>
         <div class="card">
             <div class="imgbox">
-                <img src="IMG-20211009-WA0006.jpg" alt="">
+                <img src="img5.jpeg" alt="">
             </div>
             <div class="detal">
                 <h2> चाहत </h2>
@@ -150,7 +150,7 @@
         </div>
         <div class="card">
             <div class="imgbox">
-                <img src="WhatsApp Image 2022-10-19 at 10.36.10 PM.jpeg" alt="">
+                <img src="img6.jpeg" alt="">
             </div>
             <div class="detal">
                 <h2>जिन्दगी जीने के तरीके </h2>
@@ -166,5 +166,13 @@
         <source src="kina.mp3">
     </audio>
 </body>
+    <script>
+    window.addEventListener('load', () => {
+        const audio = document.getElementById('playAudio');
+        audio.play().catch(error => {
+            console.log('Autoplay was prevented:', error);
+        });
+    });
+</script>
 
 </html>

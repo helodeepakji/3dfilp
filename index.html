@@ -167,12 +167,10 @@
     </audio>
 </body>
     <script>
-    window.addEventListener('load', () => {
-        const audio = document.getElementById('playAudio');
+     const audio = document.getElementById('playAudio');
         audio.play().catch(error => {
             console.log('Autoplay was prevented:', error);
         });
-    });
 </script>
 
 </html>
